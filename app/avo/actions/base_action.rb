@@ -1,4 +1,6 @@
 class BaseAction < Avo::BaseAction
+  include SemanticLogger::Loggable
+
   field :comment, as: :textarea, required: true,
     help: "A comment explaining why this action was taken.<br>Will be saved in the audit log.<br>Must be more than 10 characters."
 
@@ -36,7 +38,7 @@ class BaseAction < Avo::BaseAction
 
     attr_reader :models, :fields, :current_user, :arguments, :resource
 
-    delegate :error, :avo, :keep_modal_open, :redirect_to, :inform, :action_name,
+    delegate :error, :avo, :keep_modal_open, :redirect_to, :inform, :action_name, :logger,
       to: :@action
 
     set_callback :handle, :before do
