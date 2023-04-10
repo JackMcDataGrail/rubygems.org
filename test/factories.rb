@@ -11,7 +11,7 @@ FactoryBot.define do
     access_policy do
       {
         statements: [
-          { effect: "allow", 
+          { effect: "allow",
             principal: { oidc: provider.issuer },
             conditions: [] }
         ]
