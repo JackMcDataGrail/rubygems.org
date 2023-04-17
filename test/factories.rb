@@ -85,6 +85,21 @@ FactoryBot.define do
     end
   end
 
+  factory :oidc_id_token, class: "OIDC::IdToken" do
+    api_key_role { build(:oidc_api_key_role) }
+    provider { api_key_role.provider }
+    api_key { build(:api_key, user: api_key_role.user) }
+    jwt do
+      {
+        claims: {
+          claim1: "value1",
+          claim2: "value2"
+        },
+        header: {}
+      }
+    end
+  end
+
   factory :admin_github_user, class: "Admin::GitHubUser" do
     login { "jackson-keeling" }
     avatar_url { "MyString" }
