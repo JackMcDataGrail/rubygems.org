@@ -13,7 +13,9 @@ FactoryBot.define do
         statements: [
           { effect: "allow",
             principal: { oidc: provider.issuer },
-            conditions: [] }
+            conditions: [
+              { operator: "string_equals", claim: "sub", value: "the_sub" }
+            ] }
         ]
       }
     end
