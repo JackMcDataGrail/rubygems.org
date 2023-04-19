@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - master
-      - webauthn-cli
+      - oidc-api-tokens
 permissions:
   contents: read
   id-token: write
