@@ -51,7 +51,7 @@ gem "webauthn", "~> 3.0"
 gem "browser", "~> 5.3", ">= 5.3.1"
 
 # Admin dashboard
-gem "avo", "~> 2.28"
+gem "avo", "~> 2.33", ">= 2.33.3"
 gem "view_component", "~> 2.0"
 gem "pundit", "~> 2.3"
 gem "chartkick", "~> 5.0"
