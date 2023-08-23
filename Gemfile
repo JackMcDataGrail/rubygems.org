@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
-gem "rails", "~> 7.0.0"
-gem "rails-i18n", "~> 7.0"
+gem "rails", "~> 7.0.7", ">= 7.0.7.1"
+gem "rails-i18n", "~> 7.0", ">= 7.0.7"
 
 gem "aws-sdk-s3", "~> 1.119"
 gem "aws-sdk-sqs", "~> 1.53"
@@ -12,12 +12,12 @@ gem "ddtrace", "~> 1.10", require: "ddtrace/auto_instrument"
 gem "dogstatsd-ruby", "~> 5.5"
 gem "google-protobuf", "~> 3.22"
 gem "faraday", "~> 1.10"
-gem "good_job", "~> 3.14"
+gem "good_job", "~> 3.15", ">= 3.15.8"
 gem "gravtastic", "~> 3.2"
 gem "high_voltage", "~> 3.1"
 gem "honeybadger", "~> 5.2"
 gem "http_accept_language", "~> 2.1"
-gem "jquery-rails", "~> 4.5"
+gem "jquery-rails", "~> 4.6", ">= 4.6.0"
 gem "kaminari", "~> 1.2"
 gem "launchdarkly-server-sdk", "~> 7.0"
 gem "mail", "~> 2.8"
@@ -26,7 +26,7 @@ gem "omniauth-github", "~> 2.0"
 gem "omniauth", "~> 2.1"
 gem "omniauth-rails_csrf_protection", "~> 1.0"
 gem "pg", "~> 1.4"
-gem "puma", "~> 6.1"
+gem "puma", "~> 6.3", ">= 6.3.1"
 gem "rack", "~> 2.2"
 gem "rack-utf8_sanitizer", "~> 1.8"
 gem "rbtrace", "~> 0.4.8"
@@ -38,7 +38,7 @@ gem "statsd-instrument", "~> 3.5"
 gem "validates_formatting_of", "~> 0.9"
 gem "opensearch-dsl", "~> 0.2.0"
 gem "opensearch-ruby", "~> 1.0"
-gem "searchkick", "~> 5.2"
+gem "searchkick", "~> 5.2", ">= 5.2.4"
 gem "faraday_middleware-aws-sigv4", "~> 0.6"
 gem "xml-simple", "~> 1.1"
 gem "compact_index", "~> 0.14.0"
@@ -51,11 +51,11 @@ gem "webauthn", "~> 3.0"
 gem "browser", "~> 5.3", ">= 5.3.1"
 
 # Admin dashboard
-gem "avo", "~> 2.28"
-gem "view_component", "~> 2.0"
-gem "pundit", "~> 2.3"
+gem "avo", "~> 2.32", ">= 2.32.0"
+gem "view_component", "~> 3.0", ">= 3.0.0"
+gem "pundit", "~> 2.3", ">= 2.3.1"
 gem "chartkick", "~> 5.0"
-gem "groupdate", "~> 6.2"
+gem "groupdate", "~> 6.3", ">= 6.3.0"
 
 # Logging
 gem "amazing_print", "~> 1.4"
@@ -76,7 +76,7 @@ group :development, :test do
 
   gem "brakeman", "~> 5.4", require: false
   gem "rubocop", "~> 1.48", require: false
-  gem "rubocop-rails", "~> 2.18", require: false
+  gem "rubocop-rails", "~> 2.19", ">= 2.19.0", require: false
   gem "rubocop-performance", "~> 1.16", require: false
   gem "rubocop-minitest", "~> 0.29", require: false
   gem "rubocop-capybara", "~> 2.17", require: false
