@@ -31,7 +31,7 @@ gem "rack", "~> 2.2"
 gem "rack-utf8_sanitizer", "~> 1.8"
 gem "rbtrace", "~> 0.4.8"
 gem "rdoc", "~> 6.5"
-gem "roadie-rails", "~> 3.0"
+gem "roadie-rails", "~> 3.1", ">= 3.1.0"
 gem "ruby-magic", "~> 0.6"
 gem "shoryuken", "~> 4.0", require: false
 gem "statsd-instrument", "~> 3.5"
