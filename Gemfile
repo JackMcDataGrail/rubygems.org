@@ -59,7 +59,7 @@ gem "groupdate", "~> 6.2"
 
 # Logging
 gem "amazing_print", "~> 1.4"
-gem "rails_semantic_logger", "~> 4.11"
+gem "rails_semantic_logger", "~> 4.13", ">= 4.13.0"
 
 group :assets do
   gem "sassc-rails", "~> 2.1"
